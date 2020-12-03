@@ -1,0 +1,8 @@
+---
+applications:
+ - name: Billing-Service-API
+   buildpack: java_buildpack
+   path: target/Billing-Service-API-1.0.jar
+   domain: cfapps.io
+   memory: 1G
+   instances: 1

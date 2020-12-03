@@ -1,0 +1,8 @@
+---
+applications:
+ - name: praveen-sping-cloud-eureka-server
+   buildpack: java_buildpack
+   path: target/praveen-sping-cloud-eureka-server-1.0.jar
+   domain: cfapps.io
+   memory: 1G
+   instances: 1

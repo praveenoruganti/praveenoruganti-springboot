@@ -1,0 +1,13 @@
+spring:
+ application: 
+  name: praveenoruganti-spring-cloud-config-server
+
+ cloud:
+   config:
+     server:
+       git:
+        uri: https://github.com/praveenoruganti/praveenoruganti-configuration
+        searchPaths: config
+server:
+ port: 8888
+

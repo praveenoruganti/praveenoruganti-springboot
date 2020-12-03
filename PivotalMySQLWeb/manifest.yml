@@ -1,0 +1,11 @@
+---
+applications:
+- name: praveen-pivotal-mysqlweb
+  buildpack: java_buildpack
+  memory: 1G
+  instances: 1
+  domain: cfapps.io
+  path: ./target/PivotalMySQLWeb-1.0.jar
+  services:
+    - praveen-mysql
+

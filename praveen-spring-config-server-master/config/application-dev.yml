@@ -1,0 +1,104 @@
+---
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+ 
+management:
+  endpoint:
+    refresh:
+      enabled: true
+    health:
+      show-details: always 
+  endpoints: 
+    web:
+      exposure:
+        include: "*"  
+  
+server:
+    port: 8080
+    error:
+     include-stacktrace: never
+    
+logging:
+     path: 
+     file: 
+     level: 
+       root: INFO 
+       org: 
+        springframework: 
+         security: INFO
+         jdbc:
+          core: TRACE
+
+info:
+  app:
+   name: "praveen-user-management-service"
+   description: "Praveen User Management Service"
+   version: "1.0"
+   encoding: "UTF-8"
+   java:
+    version: "1.8"
+
+spring:
+   application:
+     name: praveen-user-management-service
+   profiles:
+    active: dev   
+   cloud:
+    config:     
+     uri: http://localhost:8888
+#   security:
+#    user:
+#      name: praveen
+#      password: pcf
+    zipkin:
+      base-url: http://localhost:9411/
+    sleuth:
+      sampler:
+        probability: 1
+     
+
+   
+   jpa:
+     show-sql: true 
+     database: MYSQL
+     generate-ddl: true
+     
+   datasource:
+          type: com.zaxxer.hikari.HikariDataSource
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://root:password@localhost:3306/praveendb?reconnect=true
+          username: root
+          password: password
+          hikari:
+            connectionTimeout : 30000
+            idleTimeout : 600000
+            maxLifetime : 1800000
+            maximumPoolSize : 5
+            
+   rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+praveen-user-management-service:         
+          rabbitmq:
+            queueName: praveenmq
+            topicExchange: praveenexchange   
+          redis:
+            host: localhost
+            port: 6379
+            password:
+            jedis:   
+             pool:
+              max-active: 8
+              max-idle: 8
+              max-wait: -1
+              min-idle: 0

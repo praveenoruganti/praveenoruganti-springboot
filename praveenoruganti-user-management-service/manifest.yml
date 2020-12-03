@@ -1,0 +1,15 @@
+---
+applications:
+ - name: praveenoruganti-user-management-service
+   buildpack: java_buildpack
+   path: target/praveenoruganti-user-management-service-1.0.jar
+   services:
+       - praveen-spring-config-server
+       - praveen-service-registry
+       - praveen-mysql
+       - praveen-rabbitmq 
+       - praveen-redis     
+   domain: cfapps.io
+   memory: 1G
+   instances: 1
+   

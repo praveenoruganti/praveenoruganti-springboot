@@ -1,0 +1,10 @@
+---
+inherit: basemanifest.yml
+applications:
+- name: Order-Management-Service-API
+  host: order-management-service-api
+  services:
+    - praveen-config-server
+    
+  env:
+   LOG_LEVEL: INFO

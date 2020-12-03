@@ -1,0 +1,79 @@
+---
+management:
+  endpoint:
+    refresh:
+      enabled: true
+    health:
+      show-details: always 
+  endpoints: 
+    web:
+      exposure:
+        include: "*"  
+
+server:
+    port: 8080
+    error:
+     include-stacktrace: never
+    
+logging:
+     path: 
+     file: 
+     level: 
+       root: INFO 
+       org: 
+        springframework: 
+         security: INFO
+
+info:
+  app:
+   name: "praveen-user-management-service"
+   description: "Praveen User Management Service"
+   version: "1.0"
+   encoding: "UTF-8"
+   java:
+    version: "1.8"
+
+spring:
+   application:
+     name: praveen-user-management-service
+   profiles:
+    active: dev
+ 
+
+   jpa:
+     show-sql: true 
+     database: MYSQL
+     generate-ddl: true
+   datasource :
+          type: com.zaxxer.hikari.HikariDataSource
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://b632a0024b63e7:5f3004aed14ada9@us-cdbr-iron-east-02.cleardb.net:3306/ad_0173b1a73afa202?reconnect=true
+          username: b632a0024b63e7
+          password: 5f3004aed14ada9
+          hikari:
+            connectionTimeout : 30000
+            idleTimeout : 600000
+            maxLifetime : 1800000
+            maximumPoolSize : 5
+            
+   rabbitmq:
+    host: orangutan.rmq.cloudamqp.com
+    port: 5672
+    username: cuorvmqg
+    password: LR7A73-8bydesk5Pp2U6Ad7mEEKtMeHX
+ 
+
+praveen-user-management-service:
+          rabbitmq:
+            queueName: praveenmq
+            topicExchange: praveenexchange   
+          redis:
+            host: redis-11167.c13.us-east-1-3.ec2.cloud.redislabs.com
+            port: 11167
+            password: u3iwrkG72s7eotE7k176qAqSHepq6VgN              
+            jedis:   
+             pool:
+              max-active: 8
+              max-idle: 8
+              max-wait: -1
+              min-idle: 0

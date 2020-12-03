@@ -1,0 +1,113 @@
+server:
+  port: 8091
+spring:
+  profiles:
+   active: chaos-monkey
+  application:
+    name: Billing-Service-API
+chaos:
+  monkey:
+    enabled: true
+    assaults:
+      level: 8
+      latencyRangeStart: 1000
+      latencyRangeEnd: 10000
+      exceptionsActive: false
+      killApplicationActive: true
+    watcher:
+      repository: true
+      restController: true
+
+management:
+  endpoints:
+   enable-by-default: false   
+   web:
+     base-path: /
+     exposure:
+       include: info,refresh,loggers,chaosmonkey
+  endpoint:
+    chaosmonkey:
+      enabled: true
+    info:
+      enabled: true
+    refresh:
+      enabled: true
+    loggers:
+      enabled: true
+      
+apidocs:
+  info:
+   description: |
+   
+       Billing Service API is used to process the billing of an order
+       
+       This API accepts the below fields as a part of the request.       
+       
+       * __appId__ : App id should be characters and mandatory
+       * __orderId__ : Order id should be numeric
+       * __transactionId__ :  transaction Id should be characters and mandatory
+       * __totalPrice__ : total price of the order and it needs to be with 2 decimals
+       
+       
+   version: '1.0'
+   title: Billing Service API
+   termsOfService: 'urn:tos'
+   contact:
+     name: Praveen Oruganti
+     url: https://praveenorugantitech.blogspot.com
+     email: praveenorugantitech@gmail.com
+  ErrorMessage:
+    code:
+     notes: 4000,6000,5000
+     desc: Error Details to describe the Client, Business and System Errors
+     description:
+       notes: Input Request Validation Failure and Internal Service Failures
+     errors:
+      notes: |
+      
+       {
+         400001: Request Json is malformed or invalid
+         400002: Request Method is not allowed
+         400003: Dynamic Content type not supported
+         400004: Invalid Order ID
+         400005: Invalid Transaction Id and max length should be less then 20
+         400006: Invalid App ID, allowed app ids ${appIds}
+         400007: Invalid Amount and it needs to be with 2 decimals max
+       
+       
+       }
+    
+    
+app:
+ disable:
+  tryOutOption:false 
+ appIds:
+   - OrderManagement
+ validationErrors:
+   orderId:
+     - code: 400004
+       description: Invalid Order ID
+   transactionId:
+     - code: 400005
+       description: Invalid Transaction Id and max length should be less then 20
+   appId:
+     - code: 400006
+       description: Invalid App ID, allowed app ids ${appIds}
+   totalPrice:
+     - code: 400007
+       description: Invalid Amount and it needs to be with 2 decimals max
+ messageNotReadabaleError:
+     code: 400001
+     description: Request Json is malformed or invalid
+ invalidHttpMethodError:
+     code: 400002
+     description:  Request Method is not allowed
+ invalidInputError:
+     code: 400003
+     description:  Dynamic Content type not supported
+ clientError:
+    code: 4000
+    description: Input Validation Failure
+ businessError:
+    code: 6000
+    description: Business Validation Failure

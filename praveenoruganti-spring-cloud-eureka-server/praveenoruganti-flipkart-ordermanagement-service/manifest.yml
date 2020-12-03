@@ -1,0 +1,8 @@
+---
+applications:
+ - name: praveen-flipkart-ordermanagement-service
+   buildpack: java_buildpack
+   path: target/praveen-flipkart-ordermanagement-service-1.0.jar
+   domain: cfapps.io
+   memory: 1G
+   instances: 1

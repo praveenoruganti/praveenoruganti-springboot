@@ -1,0 +1,42 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: praveenoruganti-springboot-batch-scheduler
+
+management:
+  endpoints:
+   enable-by-default: false   
+   web:
+     base-path: /
+     exposure:
+       include: info,refresh,logger
+  endpoint:    
+    info:
+      enabled: true
+    refresh:
+      enabled: true
+    loggers:
+      enabled: true
+apidocs:
+  info:
+   description: |
+   
+       Praveen Oruganti SpringBoot Batch Scheduler    
+             
+   version: '1.0'
+   title: Praveen Oruganti SpringBoot Batch Scheduler
+   termsOfService: 'urn:tos'
+   contact:
+     name: Praveen Oruganti
+     url: https://praveenorugantitech.blogspot.com
+     email: praveenorugantitech@gmail.com
+
+app:
+ disable:
+  tryOutOption:false 
+ serviceName: Praveen Oruganti SpringBoot Batch Scheduler
+ scheduler:
+   configCornJob: 0 0/1 * * * ?
+   runnableEnvironment: dev
+   timezone: IST

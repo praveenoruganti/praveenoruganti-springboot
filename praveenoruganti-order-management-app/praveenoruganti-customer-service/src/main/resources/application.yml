@@ -1,0 +1,80 @@
+eureka:
+ client:
+  register-with-eureka: true
+  fetch-registry: true
+  serviceUrl:
+    defaultZone: http://localhost:8761/eureka
+  instance:
+   hostname: localhost
+  
+server:
+  port: 6070
+
+
+spring:
+ application:
+   name: praveenoruganti-customer-service
+ jpa:
+  database: MYSQL
+  show-sql: true
+  generate-ddl: false
+  
+ datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://root:password@localhost:3306/omscustomerdb?reconnect=true
+    username: root
+    password: password
+    hikari:
+      connectionTimeout : 30000
+      idleTimeout : 600000
+      maxLifetime : 1800000
+      maximumPoolSize : 5
+
+ rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    
+ cloud:
+  stream:
+   default: 
+    contentType: application/json
+   bindings:
+     customerCreatedChannel:
+       destination: CustomerCreatedExchange
+       group: CustomerCreatedMQ
+
+management:
+  endpoints:
+  exposure:
+    web:
+     include: '*'
+app:
+ disable:
+  tryOutOption:false 
+apidocs:
+  info:
+   description: |
+   
+       Customer Service API 
+        1. Get customers - return all the customer details in the table
+          http://localhost:6070/customerservice/customers
+        2. Create a customer by sending the customer details
+           http://localhost:6070/customerservice/customers
+           a. when a create customer method is invoked. Insert the details in customer table 
+              and publish "CustomerCreated" event along with customer details.
+           b. sales order service has to subscribe to "CustomerCreated" event 
+       
+       
+   version: '1.0'
+   title: Customer Service API
+   termsOfService: 'urn:tos'
+   contact:
+     name: Praveen Oruganti
+     url: https://praveenorugantitech.blogspot.com
+     email: praveenorugantitech@gmail.com
+
+         
+   

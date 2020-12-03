@@ -1,0 +1,40 @@
+spring:
+ datasource:
+    url: jdbc:mysql://root:password@localhost:3306/praveendb?reconnect=true
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: password
+
+ jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+    properties:
+      javax:
+       persistence:
+         sharedCache:
+           mode: ENABLE_SELECTIVE
+      hibernate:
+        generate_statistics: true
+#       ddl-auto: create
+        format-sql: true
+        batch_size: 10
+        cache:
+         use_second_level_cache: true
+         region:
+           factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
+             
+logging:
+   level:
+    net:
+     sf:
+      ehcahe: debug
+     org:
+      hibernate:
+        stat: debug
+        type: debug
+
+server:
+  port: 9080
+  
+ 
+ 

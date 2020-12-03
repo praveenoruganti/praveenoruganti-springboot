@@ -1,0 +1,32 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+        
+billingservice:        
+ ribbon:
+   eureka: disable
+   listOfServers: localhost:8091,localhost:8092
+   ServerListRefreshInterval: 2000
+   
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+server:
+  port: 8090
+spring:
+  application:
+    name: praveenoruganti-flipkart-ordermanagement-service
+    
+praveen-flipkart-ordermanagement-service:
+                   billingURL: http://praveenoruganti-flipkart-billing-service/rest/billingservice/billingorder

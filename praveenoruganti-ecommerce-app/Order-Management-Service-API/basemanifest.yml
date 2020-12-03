@@ -1,0 +1,8 @@
+---
+applications:
+ - name: Order-Management-Service-API
+   buildpack: java_buildpack
+   path: target/Order-Management-Service-API-1.0.jar
+   domain: cfapps.io
+   memory: 1G
+   instances: 1

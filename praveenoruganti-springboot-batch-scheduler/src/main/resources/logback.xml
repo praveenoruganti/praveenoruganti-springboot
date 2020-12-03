@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<springProperty scope="context" name="springAppName"
+		source="spring.application.name" />
+	<appender name="CONSOLE"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder
+			class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+
+			<providers>
+				<timestamp>
+					<timeZone>IST</timeZone>
+				</timestamp>
+				<pattern>
+					<pattern>
+						{
+						"severity": "%level",
+						"service": "${springAppName}",
+						"trace": "%X{X-B3-TraceId:-}",
+						"span":"%X{X-B3-SpanId:-}",
+						"parent":"%X{X-B3-ParentSpanId:-}",
+						"exportable":
+						"%X{X-Span=Export:-}",
+						"thread":"%thread",
+						"class": "%logger{40}",
+						"methodName":"%M",
+						"lineNo": "%L",
+						"message":"%message",
+						"stacktrace":"%exception"
+						}
+					</pattern>
+				</pattern>
+				<mdc />
+				<arguments />
+				<logstashMarkers />
+			</providers>
+		</encoder>
+	</appender>	
+	<root level="INFO">
+		<appender-ref ref="CONSOLE" />
+	</root>
+</configuration>

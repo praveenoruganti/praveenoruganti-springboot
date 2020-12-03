@@ -1,0 +1,31 @@
+server:
+    port: 9100
+    error:
+     include-stacktrace: never
+
+spring:
+   application:
+     name: praveenoruganti-rabbitmq-integration-service
+
+   datasource:
+          type: com.zaxxer.hikari.HikariDataSource
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://root:password@localhost:3306/praveendb?reconnect=true
+          username: root
+          password: password
+          hikari:
+            connectionTimeout : 30000
+            idleTimeout : 600000
+            maxLifetime : 1800000
+            maximumPoolSize : 5
+            
+   rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+praveenoruganti-rabbitmq-integration-service:         
+          rabbitmq:
+            queueName: praveenmq
+            topicExchange: praveenexchange

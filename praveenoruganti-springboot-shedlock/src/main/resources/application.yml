@@ -1,0 +1,62 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: praveenoruganti-springboot-shedlock
+  jpa:
+  database: MYSQL
+  show-sql: true
+  generate-ddl: false
+  
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://root:password@localhost:3306/praveendb?reconnect=true
+    username: root
+    password: password
+    hikari:
+      connectionTimeout : 30000
+      idleTimeout : 600000
+      maxLifetime : 1800000
+      maximumPoolSize : 5
+management:
+  endpoints:
+   enable-by-default: false   
+   web:
+     base-path: /
+     exposure:
+       include: info,refresh,logger
+  endpoint:    
+    info:
+      enabled: true
+    refresh:
+      enabled: true
+    loggers:
+      enabled: true
+apidocs:
+  info:
+   description: |
+   
+       Praveen Oruganti SpringBoot Shedlock
+             
+   version: '1.0'
+   title: Praveen Oruganti SpringBoot Shedlock
+   termsOfService: 'urn:tos'
+   contact:
+     name: Praveen Oruganti
+     url: https://praveenorugantitech.blogspot.com
+     email: praveenorugantitech@gmail.com
+
+app:
+ disable:
+  tryOutOption:false 
+ serviceName: Praveen Oruganti SpringBoot Shedlock
+ shedlock: 
+   name: QuoteGeneratorJob
+   defaultLockAtMostFor: 30s
+   lockAtLeastFor: 15s
+   lockAtMostFor: 20s
+   scheduler:
+     configCornJob: 0 0/1 * * * ?
+     runnableEnvironment: dev
+     timezone: IST

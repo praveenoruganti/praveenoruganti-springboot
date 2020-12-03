@@ -1,0 +1,24 @@
+server:
+  port: 8760
+
+
+spring:
+ application:
+   name: praveenoruganti-zuul-api-gateway-server
+   
+
+zuul:
+ routes:
+  customerservice:
+    serviceId: praveenoruganti-customer-service
+  salesorderservice:
+    serviceId: praveenoruganti-salesorder-service
+
+eureka:
+ client:
+  register-with-eureka: true
+  fetch-registry: true
+  serviceUrl:
+    defaultZone: http://localhost:8761/eureka
+  instance:
+   hostname: localhost

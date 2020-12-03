@@ -1,0 +1,10 @@
+---
+inherit: basemanifest.yml
+applications:
+- name: Billing-Service-API
+  host: billing-service-api
+  services:
+    - praveen-config-server
+    
+  env:
+   LOG_LEVEL: INFO

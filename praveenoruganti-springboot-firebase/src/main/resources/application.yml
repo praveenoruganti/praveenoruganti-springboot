@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: praveenoruganti-patient-app
+
+management:
+  endpoints:
+   enable-by-default: false   
+   web:
+     base-path: /
+     exposure:
+       include: info,refresh,loggers
+  endpoint:
+    info:
+      enabled: true
+    refresh:
+      enabled: true
+    loggers:
+      enabled: true
+      
+apidocs:
+  info:
+   description: 'Praveen Oruganti Patient App'     
+   version: '1.0'
+   title: Praveen Oruganti Patient App
+   termsOfService: 'urn:tos'
+   contact:
+     name: Praveen Oruganti
+     url: https://praveenorugantitech.blogspot.com
+     email: praveenorugantitech@gmail.com
+ 
+    
+app:
+ disable:
+  tryOutOption:false 
