@@ -75,9 +75,9 @@ management:
 
 ### Let’s Open URL for eureka server application
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-spring-cloud-eureka-server/master/praveenoruganti-spring-cloud-eureka-server/src/main/resources/images/1.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-eureka-server/praveenoruganti-spring-cloud-eureka-server/src/main/resources/images/1.png)
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-spring-cloud-eureka-server/master/praveenoruganti-spring-cloud-eureka-server/src/main/resources/images/2.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-eureka-server/praveenoruganti-spring-cloud-eureka-server/src/main/resources/images/2.png)
 
 If you see above there are no application registered in eureka server.
 
@@ -242,15 +242,15 @@ As we have used Eureka Server, there is no need for providing the hostname and p
 
 ### Let’s open URL for eureka server application
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-spring-cloud-eureka-server/master/praveenoruganti-spring-cloud-eureka-server/src/main/resources/images/3.png)
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-spring-cloud-eureka-server/master/praveenoruganti-spring-cloud-eureka-server/src/main/resources/images/6.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-eureka-server/praveenoruganti-spring-cloud-eureka-server/src/main/resources/images/3.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-eureka-server/praveenoruganti-spring-cloud-eureka-server/src/main/resources/images/6.png)
 ### PCF configuration for service registry and discovery
 
 While using PCF there is no need to develop separate Netflix eureka server springboot application rather we will use the PCF inbuilt Service Registry service.
 
 Login into PCF and go to market place and select Service Registry service.
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-spring-cloud-eureka-server/master/praveenoruganti-spring-cloud-eureka-server/src/main/resources/images/5.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-eureka-server/praveenoruganti-spring-cloud-eureka-server/src/main/resources/images/5.png)
 
 There is no need to use spring-cloud-starter-netflix-eureka-client dependency rather we will be including spring-cloud-services-starter-service-registry dependency in pom.xml
 

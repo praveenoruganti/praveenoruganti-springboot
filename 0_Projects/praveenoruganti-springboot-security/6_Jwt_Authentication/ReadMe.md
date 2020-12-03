@@ -19,13 +19,13 @@ In our case username is praveen and password is password123.
 
 }
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot-security/master/6_Jwt_Authentication/src/main/resources/images/jwt1.PNG "Authenticate")
+![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-springboot-security/6_Jwt_Authentication/src/main/resources/images/jwt1.PNG "Authenticate")
 
 - Validate the JSON Web Token
 Try accessing the url localhost:8080/api/v1/students using the above generated token in the header as follows
 
 Authorization : Bearer Token
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot-security/master/6_Jwt_Authentication/src/main/resources/images/jwt2.PNG "Authenticate")
+![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-springboot-security/6_Jwt_Authentication/src/main/resources/images/jwt2.PNG "Authenticate")
 
 - You can refer my [article](https://praveenorugantitech.blogspot.com/2019/05/spring-security-jwt-authentication.html) for more details. 

@@ -223,5 +223,5 @@ The greatest glory in living lies not in never falling, but in rising every time
 
 If you see the table only one instance will hold the lock.
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot-shedlock/master/src/main/resources/images/1.PNG)
+![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-springboot-shedlock/src/main/resources/images/1.PNG)
 
