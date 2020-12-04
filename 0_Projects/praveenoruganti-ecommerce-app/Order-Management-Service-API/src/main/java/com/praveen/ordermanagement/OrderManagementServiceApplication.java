@@ -46,7 +46,7 @@ public class OrderManagementServiceApplication {
 	}
 
 	@Bean
-	public Docket flipkartBillingServiceApi(Environment environment, TypeResolver typeResolver) {
+	public Docket orderManagementServiceApi(Environment environment, TypeResolver typeResolver) {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.apiInfo(new ApiInfo(environment.getRequiredProperty("apidocs.info.title"),
 						environment.getRequiredProperty("apidocs.info.description"),

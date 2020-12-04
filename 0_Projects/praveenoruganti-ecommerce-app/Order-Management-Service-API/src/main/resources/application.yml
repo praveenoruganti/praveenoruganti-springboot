@@ -22,19 +22,19 @@ management:
            
 apidocs:
   info:
-   description: 
+   description: |
        Order Management Service API is used to place the orders
        
        API accepts the below fields as a part of the request.       
        
-       1. _appId_ -> App is should be characters and mandatory
-       2. __orderId__ -> Order id should be numeric and mandatory
-       3.__transactionId__ ->  transaction Id should be characters and mandatory
-       4. _orderList_ -> List of orders and mandatory
+       * __appId__ : App is should be characters and mandatory
+       * __orderId__ : Order id should be numeric and mandatory
+       * __transactionId__ : transaction Id should be characters and mandatory
+       * __orderList__ : List of orders and mandatory
        
        
    version: '1.0'
-   title: Billing Service API
+   title: Order Management Service API
    termsOfService: 'urn:tos'
    contact:
      name: Praveen Oruganti

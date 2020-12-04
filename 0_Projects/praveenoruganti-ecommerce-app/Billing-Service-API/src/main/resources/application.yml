@@ -1,33 +1,16 @@
 server:
   port: 8091
-spring:
-  profiles:
-   active: chaos-monkey
+spring: 
   application:
     name: Billing-Service-API
-chaos:
-  monkey:
-    enabled: true
-    assaults:
-      level: 8
-      latencyRangeStart: 1000
-      latencyRangeEnd: 10000
-      exceptionsActive: false
-      killApplicationActive: true
-    watcher:
-      repository: true
-      restController: true
-
 management:
   endpoints:
    enable-by-default: false   
    web:
      base-path: /
      exposure:
-       include: info,refresh,loggers,chaosmonkey
-  endpoint:
-    chaosmonkey:
-      enabled: true
+       include: info,refresh,loggers
+  endpoint:   
     info:
       enabled: true
     refresh:
