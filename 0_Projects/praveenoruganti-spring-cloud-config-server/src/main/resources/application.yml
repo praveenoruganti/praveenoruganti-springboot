@@ -6,7 +6,7 @@ spring:
    config:
      server:
        git:
-        uri: https://github.com/praveenoruganti/praveenoruganti-configuration
+        uri: https://github.com/praveenoruganti/praveenoruganti-springboot/tree/master/0_Projects/praveen-spring-config-server-master
         searchPaths: config
 server:
  port: 8888
