@@ -15,3 +15,5 @@ insert into hibernate_sequence values ( 1 );
 create table customer (id bigint not null, creation_date varchar(20) not null, email varchar(50) not null, first_name varchar(50) not null, last_name varchar(50) not null, primary key (id)) engine=MyISAM;
 
 ```
+
+### [Buy me a Coffee](http://bit.ly/2WryDT8)

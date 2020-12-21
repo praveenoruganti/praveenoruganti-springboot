@@ -1,8 +1,6 @@
-heroku login
-heroku create praveen-billing-service-api
-git init
-heroku git:remote -a praveen-billing-service-api
-git add .
-git commit -am "make it better"
-git push heroku master
-heroku ps:scale web=1
+# Billing Service API
+
+Here with the swagger [URL](https://praveen-billing-service-api.herokuapp.com/swagger-ui.html).
+
+
+### [Buy me a Coffee](http://bit.ly/2WryDT8)
