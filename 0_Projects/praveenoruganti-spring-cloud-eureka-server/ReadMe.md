@@ -266,4 +266,4 @@ There is no need to use spring-cloud-starter-netflix-eureka-client dependency ra
 All other configurations which we discussed above related to local environment using eureka server holds good.
 
 
-### [Contribution for a Cause](http://bit.ly/2WryDT8)
+### [Contribute for a Cause](http://bit.ly/2WryDT8)

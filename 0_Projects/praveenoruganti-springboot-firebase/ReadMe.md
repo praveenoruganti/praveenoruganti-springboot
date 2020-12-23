@@ -83,5 +83,5 @@ Create [new user](https://github.com/praveenoruganti/praveenoruganti-springboot/
 ![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-springboot-firebase/src/main/resources/images/18.PNG)
 
 
-### [Contribution for a Cause](http://bit.ly/2WryDT8)
+### [Contribute for a Cause](http://bit.ly/2WryDT8)
 
