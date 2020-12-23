@@ -15,4 +15,4 @@ create table item (id bigint not null, creation_date varchar(20) not null, descr
 
 ```
 
-### [Buy me a Coffee](http://bit.ly/2WryDT8)
+### [Contribution for a Cause](http://bit.ly/2WryDT8)
