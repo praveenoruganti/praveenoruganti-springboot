@@ -213,7 +213,7 @@ Now, if we check the logs from the console, it should print the message which wa
 
 ![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-springboot-kafka/src/main/resources/images/3.png)
 
-### [Contribute for a Cause](http://bit.ly/2WryDT8)
+### [Buy me a Coffee](http://bit.ly/2WryDT8)
 
 
 

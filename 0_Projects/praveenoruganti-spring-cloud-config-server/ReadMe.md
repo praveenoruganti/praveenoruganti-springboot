@@ -84,4 +84,4 @@ Then check whether the git information is properly updated by clicking Manage bu
 ![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-config-server/src/main/resources/images/5.png)
 
 
-### [Contribute for a Cause](http://bit.ly/2WryDT8)
+### [Buy me a Coffee](http://bit.ly/2WryDT8)

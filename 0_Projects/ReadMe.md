@@ -1,3 +1,3 @@
 # All About SpringBoot Projects
 
-### [Contribute for a Causee](http://bit.ly/2WryDT8)
+### [Buy me a Coffeee](http://bit.ly/2WryDT8)
