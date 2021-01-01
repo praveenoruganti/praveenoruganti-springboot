@@ -16,4 +16,3 @@ create table customer (id bigint not null, creation_date varchar(20) not null, e
 
 ```
 
-### [Buy me a Coffee](http://bit.ly/2WryDT8)

@@ -82,4 +82,3 @@ Download from https://dev.mysql.com/downloads/file/?id=489911 and proceed with d
 - Centralized Configuration - Spring Config Server
 - Asynchronous processing - Rabbit MQ
 
-### [Buy me a Coffee](http://bit.ly/2WryDT8)

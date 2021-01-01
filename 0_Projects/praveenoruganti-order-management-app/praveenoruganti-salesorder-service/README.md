@@ -25,4 +25,3 @@ create table sales_order (id bigint not null, cust_id bigint, order_date varchar
 
 ```
 
-### [Buy me a Coffee](http://bit.ly/2WryDT8)
