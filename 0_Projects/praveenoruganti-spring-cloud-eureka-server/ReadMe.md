@@ -5,7 +5,7 @@
 Eureka Server is an application that holds the information about all client-service applications. Every Micro service will register into the Eureka server and Eureka server knows all the client applications running on each port and IP address. Eureka Server is also known as Discovery Server.
 Normally in Micro Service Architecture Design we are developing separate Services and exposing each API as service Endpoint and whenever we required to access other services in simple we will be using RestTemplate.
 
-It is highly impossible to remember the microservice restful service endpoint URL’s with hostname and port so Netflix team came up with solution with Eureka server where all services endpoints will be registered.
+It is highly impossible to remember the microservice restful service endpoint URLs with hostname and port so Netflix team came up with solution with Eureka server where all services endpoints will be registered.
 
 ### Registering with Eureka
 
@@ -216,7 +216,7 @@ praveen-flipkart-ordermanagement-service:
 
 ```
 
-As we have discussed earlier, praveenoruganti-flipkart-ordermanagement-service is interacting with praveenoruganti-flipkart-billing-service with the help of rest template and let’s see the code of it.
+As we have discussed earlier, praveenoruganti-flipkart-ordermanagement-service is interacting with praveenoruganti-flipkart-billing-service with the help of rest template and letï¿½s see the code of it.
 
 ```JAVA
 
