@@ -49,7 +49,7 @@ D:\Praveen\Softwares\kafka_2.12-2.3.0>bin\windows\zookeeper-server-start.bat con
 D:\Praveen\Softwares\kafka_2.12-2.3.0>bin\windows\kafka-server-start.bat .\config\server.properties
 
 ### Now, by default, the Kafka server starts on localhost:9092.
-Let’s develop a simple REST controller with Swagger integration and expose with one endpoint, /publish, as shown below. It is used to publish the message to the topic. 
+Lets develop a simple REST controller with Swagger integration and expose with one endpoint, /publish, as shown below. It is used to publish the message to the topic. 
 
 ```JAVA
 
@@ -159,7 +159,7 @@ spring:
 
 ```
 
-Let’s see the main application class with Swagger integration
+Lets see the main application class with Swagger integration
 
 ```JAVA
 package com.praveen.kafka;

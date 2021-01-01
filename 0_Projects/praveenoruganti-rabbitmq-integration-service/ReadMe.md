@@ -87,7 +87,7 @@ praveenoruganti-rabbitmq-integration-service:
 
 ```
 
-### Let's create the producer and consumer components for RabbitMQ in praveen-rabbitmq-integration-service
+### Lets create the producer and consumer components for RabbitMQ in praveen-rabbitmq-integration-service
   
 ```JAVA
 
@@ -187,7 +187,7 @@ Now I pushed the message Praveen Oruganti to Queue
 
 ![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-rabbitmq-integration-service/src/main/resources/images/9.png)
 
-### Let's see the message in mysql db
+### Lets see the message in mysql db
 
 ### SELECT * from PRAVEENLOG
 
@@ -197,7 +197,7 @@ Now I pushed the message Praveen Oruganti to Queue
 
 ### All other code and configurations will be similar to Local Environment changes except we will use CloudAMQP instead of local rabbitmq.
 
-### Let's start creating the PCF Service Rabbit MQ
+### Lets start creating the PCF Service Rabbit MQ
 
 * Click on ADD A SERVICE button and search for Rabbit MQ in Market Place
 

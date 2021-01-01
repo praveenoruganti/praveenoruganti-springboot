@@ -73,7 +73,7 @@ management:
 
 ```
 
-### Let’s Open URL for eureka server application
+### Lets Open URL for eureka server application
 
 ![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-eureka-server/praveenoruganti-spring-cloud-eureka-server/src/main/resources/images/1.png)
 
@@ -81,7 +81,7 @@ management:
 
 If you see above there are no application registered in eureka server.
 
-### Let’s consider an example, we have 2 microservices i.e... Flipkart Order Management Service and Flipkart Billing service.
+### Lets consider an example, we have 2 microservices i.e... Flipkart Order Management Service and Flipkart Billing service.
 
 Here the flow will be Flipkart Order Management Service will call Flipkart Billing Service for successful creation of order based on orderid. Here we will call the service using RestTemplate.
 
@@ -240,7 +240,7 @@ Here if you see billingURL is mentioned in application.yml as http://praveenorug
 As we have used Eureka Server, there is no need for providing the hostname and port for discovery as praveenoruganti-flipkart-ordermanagement-service and praveenoruganti-flipkart-billing-service are already registered in Eureka server rather we have used the applicationname in the URL for service interaction via rest template.
 
 
-### Let’s open URL for eureka server application
+### Lets open URL for eureka server application
 
 ![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-eureka-server/praveenoruganti-spring-cloud-eureka-server/src/main/resources/images/3.png)
 ![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-eureka-server/praveenoruganti-spring-cloud-eureka-server/src/main/resources/images/6.png)
