@@ -21,7 +21,7 @@ Producer will send messages to RabbitMQ Exchanges with a routingKey(queuename). 
 
 ### Queue:
 Here, our message will be stored. Once consumed by consumers, message will be removed from queue.
-RabbitMQ queues also follow FIFO — First-In-First-Out methodology.
+RabbitMQ queues also follow FIFO (First-In-First-Out methodology).
 
 ### Consumer:
 Consumer listens on a RabbitMQ Queue to receive messages.
@@ -36,8 +36,8 @@ An Exchange is a gateway to RabbitMQ for your messages. The distance the message
 
 * Direct Exchange - It routes messages to a queue by matching routing key equal to binding key.  Routing key == Binding key
 * Fanout Exchange - It ignores the routing key and sends message to all the available queues.
-* Topic Exchange – It routes messages to multiple queues by a partial matching of a routing key. It uses patterns to match the routing and binding key. Routing key == Pattern in binding key.
-* Headers Exchange – It uses message header instead of routing key.
+* Topic Exchange - It routes messages to multiple queues by a partial matching of a routing key. It uses patterns to match the routing and binding key. Routing key == Pattern in binding key.
+* Headers Exchange - It uses message header instead of routing key.
 * Default(Nameless) Exchange - It routes the message to queue name that exactly matches with the routing key.
 
 
@@ -187,7 +187,7 @@ Now I pushed the message Praveen Oruganti to Queue
 
 ![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-rabbitmq-integration-service/src/main/resources/images/9.png)
 
-### Let’s see the message in mysql db
+### Let's see the message in mysql db
 
 ### SELECT * from PRAVEENLOG
 
