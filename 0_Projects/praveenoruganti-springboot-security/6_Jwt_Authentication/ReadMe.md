@@ -29,3 +29,5 @@ Authorization : Bearer Token
 ![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-springboot-security/6_Jwt_Authentication/src/main/resources/images/jwt2.PNG "Authenticate")
 
 - You can refer my [article](https://praveenorugantitech.blogspot.com/2019/05/spring-security-jwt-authentication.html) for more details. 
+
+### [Buy me a Book](https://www.buymeacoffee.com/praveenoruganti)
