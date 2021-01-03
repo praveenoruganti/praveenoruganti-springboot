@@ -136,3 +136,20 @@ The greatest glory in living lies not in never falling, but in rising every time
 We need to create seperate app for batch scheduler as it needs to run in single instance which is a drawback in terms of maintenance which can be eliminated by using [ShedLock](https://github.com/praveenoruganti/praveenoruganti-springboot/tree/master/0_Projects/praveenoruganti-springboot-shedlock).
 
 ### [Buy me a Book](https://www.buymeacoffee.com/praveenoruganti)
+
+### Connect with me:
+
+[<img align="left" alt="praveenorugantitech.blogspot.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
+[<img align="left" alt="praveenoruganti | Facebook Group" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/facebook.svg" />][facebookgroup]
+[<img align="left" alt="praveenoruganti | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
+[<img align="left" alt="praveenoruganti | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
+[<img align="left" alt="praveenoruganti | Email" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg" />][email]
+
+<br/>
+
+[website]: https://praveenorugantitech.blogspot.com
+[twitter]: https://mobile.twitter.com/praveenoruganti
+[facebookgroup]: https://www.facebook.com/groups/praveenorugantitech
+[instagram]: https://instagram.com/praveenorugantitech
+[email]: mailto:praveenorugantitech@gmail.com
+
