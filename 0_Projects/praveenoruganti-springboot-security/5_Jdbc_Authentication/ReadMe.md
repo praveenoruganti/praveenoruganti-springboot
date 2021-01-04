@@ -40,7 +40,7 @@ The following table structure of the MySQL database is used to store user inform
 
 - You can refer my [article](https://praveenorugantitech.blogspot.com/2019/05/spring-security-jdbc-authentication.html) for more details. 
 
-### [Buy me a Book](https://www.buymeacoffee.com/praveenoruganti)
+### [Buy me a Book](https://bit.ly/388sUbE)
 
 
 ### Connect with me:

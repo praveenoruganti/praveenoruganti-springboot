@@ -15,7 +15,7 @@ create table item (id bigint not null, creation_date varchar(20) not null, descr
 
 ```
 
-### [Buy me a Book](https://www.buymeacoffee.com/praveenoruganti)
+### [Buy me a Book](https://bit.ly/388sUbE)
 
 ### Connect with me:
 

@@ -16,7 +16,7 @@ create table customer (id bigint not null, creation_date varchar(20) not null, e
 
 ```
 
-### [Buy me a Book](https://www.buymeacoffee.com/praveenoruganti)
+### [Buy me a Book](https://bit.ly/388sUbE)
 
 ### Connect with me:
 

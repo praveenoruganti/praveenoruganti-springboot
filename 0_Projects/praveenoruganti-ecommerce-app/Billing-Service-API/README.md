@@ -2,7 +2,7 @@
 
 Here with the swagger [URL](https://praveen-billing-service-api.herokuapp.com/swagger-ui.html).
 
-### [Buy me a Book](https://www.buymeacoffee.com/praveenoruganti)
+### [Buy me a Book](https://bit.ly/388sUbE)
 
 
 ### Connect with me:

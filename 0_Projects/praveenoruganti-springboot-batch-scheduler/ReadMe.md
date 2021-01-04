@@ -135,7 +135,7 @@ The greatest glory in living lies not in never falling, but in rising every time
 ### Drawbacks of SpringBoot Batch Scheduler
 We need to create seperate app for batch scheduler as it needs to run in single instance which is a drawback in terms of maintenance which can be eliminated by using [ShedLock](https://github.com/praveenoruganti/praveenoruganti-springboot/tree/master/0_Projects/praveenoruganti-springboot-shedlock).
 
-### [Buy me a Book](https://www.buymeacoffee.com/praveenoruganti)
+### [Buy me a Book](https://bit.ly/388sUbE)
 
 ### Connect with me:
 
