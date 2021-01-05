@@ -11,7 +11,7 @@ The topics can have zero, one, or multiple consumers, who will subscribe to the 
 ### Partitions
 The Kafka cluster uses a partitioned log for each topic.
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-springboot-kafka/src/main/resources/images/1.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-springboot-kafka/src/main/resources/images/1.png)
 
 The partition maintains the order in which data was inserted and once the record is published to the topic, it remains there depending on the retention period (which is configurable). The records are always appended at the end of the partitions. It maintains a flag called 'offsets,' which uniquely identifies each record within the partition.
 The offset is controlled by the consuming applications. Using offset, consumers might backtrace to older offsets and reprocess the records if needed.
@@ -206,12 +206,12 @@ public class SpringbootKafkaApplication {
 
 Now, if we run the application and hit the endpoint as shown below, we have published a message to the topic.
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-springboot-kafka/src/main/resources/images/2.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-springboot-kafka/src/main/resources/images/2.png)
 
 Now, if we check the logs from the console, it should print the message which was sent to the publish endpoint as seen below.
 
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-springboot-kafka/src/main/resources/images/3.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-springboot-kafka/src/main/resources/images/3.png)
 
 <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="praveenoruganti" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee!" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 

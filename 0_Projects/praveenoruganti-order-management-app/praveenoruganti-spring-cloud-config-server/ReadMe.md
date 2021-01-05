@@ -65,23 +65,23 @@ While using PCF there is no need to develop separate spring cloude config server
 
 ### Login into PCF and go to market place and select Config server service
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-spring-cloud-config-server/src/main/resources/images/1.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-spring-cloud-config-server/src/main/resources/images/1.png)
 
 Then click on Settings present in the left tab
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-spring-cloud-config-server/src/main/resources/images/2.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-spring-cloud-config-server/src/main/resources/images/2.png)
 
 Then click on Add Parameter and select Enter as JSON ON and then provide the git configuration properties and click on Update Configuration Parameters button.
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-spring-cloud-config-server/src/main/resources/images/3.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-spring-cloud-config-server/src/main/resources/images/3.png)
 
 Then check whether the git information is properly updated by clicking Manage button.
 
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-spring-cloud-config-server/src/main/resources/images/4.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-spring-cloud-config-server/src/main/resources/images/4.png)
 
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-spring-cloud-config-server/src/main/resources/images/5.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-spring-cloud-config-server/src/main/resources/images/5.png)
 
 <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="praveenoruganti" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee!" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 

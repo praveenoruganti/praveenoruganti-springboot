@@ -18,7 +18,7 @@ Cron expression is represented by six fields:
 
 second, minute, hour, day of month, month, day(s) of week
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-springboot-batch-scheduler/src/main/resources/images/1.PNG)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-springboot-batch-scheduler/src/main/resources/images/1.PNG)
 
 From the above cron expression, we give you some example patterns:
 

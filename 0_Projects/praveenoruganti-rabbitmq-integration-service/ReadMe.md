@@ -14,7 +14,7 @@ The conceptual model of AMQP is quite simple and straightforward. It has three e
 
 When a publisher pushes a message to RabbitMQ, it first arrives at an exchange. The exchange then distributes copies of these messages to variously connected queues. Finally, consumers receive these messages.
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-rabbitmq-integration-service/src/main/resources/images/1.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-rabbitmq-integration-service/src/main/resources/images/1.png)
 
 ### Producer:
 Producer will send messages to RabbitMQ Exchanges with a routingKey(queuename). RabbitMQ uses routingKey(queuename) to determine which queues for routing messages.
@@ -51,13 +51,13 @@ An Exchange is a gateway to RabbitMQ for your messages. The distance the message
   C:\Program Files\RabbitMQ Server\rabbitmq_server-3.7.17\sbin  > rabbitmq-plugins enable rabbitmq_management
 * Login into Rabbit MQ browser using URL http://localhost:15672 using userid: guest and password: guest
 
-  ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-rabbitmq-integration-service/src/main/resources/images/2.png)
+  ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-rabbitmq-integration-service/src/main/resources/images/2.png)
 * Now click on Queues Tab and create queue named praveenmq.
 
-  ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-rabbitmq-integration-service/src/main/resources/images/3.png)
+  ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-rabbitmq-integration-service/src/main/resources/images/3.png)
 * Now click on Exchanges Tab and create exchange named praveenexchange and bind it to praveenmq.
 
-  ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-rabbitmq-integration-service/src/main/resources/images/4.png)
+  ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-rabbitmq-integration-service/src/main/resources/images/4.png)
 
 ### Add below dependency in pom.xml
 
@@ -169,29 +169,29 @@ public class MessageListener {
 
 ### Now open URL http://localhost:9100/swagger-ui.html
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-rabbitmq-integration-service/src/main/resources/images/5.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-rabbitmq-integration-service/src/main/resources/images/5.png)
 
 Now I pushed the message Praveen Oruganti to Queue
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-rabbitmq-integration-service/src/main/resources/images/6.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-rabbitmq-integration-service/src/main/resources/images/6.png)
 
 ### Log information of Message Producer component and it was successfully pushed to praveenmq Queue
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-rabbitmq-integration-service/src/main/resources/images/7.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-rabbitmq-integration-service/src/main/resources/images/7.png)
 
 ###  I see Message Listener fetched the message from praveenmq Queue and pushed to mysql db for tracking purpose.
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-rabbitmq-integration-service/src/main/resources/images/8.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-rabbitmq-integration-service/src/main/resources/images/8.png)
 
 ### I am able to see the message pushed by Message Listener to mysqldb
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-rabbitmq-integration-service/src/main/resources/images/9.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-rabbitmq-integration-service/src/main/resources/images/9.png)
 
 ### Lets see the message in mysql db
 
 ### SELECT * from PRAVEENLOG
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-rabbitmq-integration-service/src/main/resources/images/10.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-rabbitmq-integration-service/src/main/resources/images/10.png)
 
 ### PCF Configuration For RabbitMQ
 
@@ -203,21 +203,21 @@ Now I pushed the message Praveen Oruganti to Queue
 
   Provide the name of the service as praveen-rabbitmq and bind to the praveen-user-management-service.
 
-  ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-rabbitmq-integration-service/src/main/resources/images/11.png)
+  ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-rabbitmq-integration-service/src/main/resources/images/11.png)
 
 * Click on Manage button and then click on RabbitMQ Manager button
 
-  ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-rabbitmq-integration-service/src/main/resources/images/12.png)
+  ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-rabbitmq-integration-service/src/main/resources/images/12.png)
 
-  ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-rabbitmq-integration-service/src/main/resources/images/13.png)
+  ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-rabbitmq-integration-service/src/main/resources/images/13.png)
 
 * Now click on Queues Tab and create queue named praveenmq
 
-  ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-rabbitmq-integration-service/src/main/resources/images/14.png)
+  ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-rabbitmq-integration-service/src/main/resources/images/14.png)
 
 * Now click on Exchanges Tab and create exchange named praveenexchange and bind it to praveenmq
 
-  ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-rabbitmq-integration-service/src/main/resources/images/15.png)
+  ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenoruganti-rabbitmq-integration-service/src/main/resources/images/15.png)
 
 
 <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="praveenoruganti" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee!" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
