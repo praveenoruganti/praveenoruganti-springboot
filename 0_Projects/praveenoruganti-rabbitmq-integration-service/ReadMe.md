@@ -220,7 +220,7 @@ Now I pushed the message Praveen Oruganti to Queue
   ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-rabbitmq-integration-service/src/main/resources/images/15.png)
 
 
-### [Buy me a Book](https://bit.ly/388sUbE)
+### [Buy me a Book](https://www.buymeacoffee.com/praveenoruganti)
 
 
 

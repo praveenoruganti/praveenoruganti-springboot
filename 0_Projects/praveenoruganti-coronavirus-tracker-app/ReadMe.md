@@ -8,7 +8,7 @@ We are using <b>COVID-19 Data Repository by the Center for Systems Science and E
 
 ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-coronavirus-tracker-app/src/main/resources/images/1.PNG)
 
-### [Buy me a Book](https://bit.ly/388sUbE)
+### [Buy me a Book](https://www.buymeacoffee.com/praveenoruganti)
 
 
 

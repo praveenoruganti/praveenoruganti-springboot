@@ -82,7 +82,7 @@ Create [new user](https://github.com/praveenorugantitech/praveenorugantitech-spr
 
 ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-springboot-firebase/src/main/resources/images/18.PNG)
 
-### [Buy me a Book](https://bit.ly/388sUbE)
+### [Buy me a Book](https://www.buymeacoffee.com/praveenoruganti)
 
 
 

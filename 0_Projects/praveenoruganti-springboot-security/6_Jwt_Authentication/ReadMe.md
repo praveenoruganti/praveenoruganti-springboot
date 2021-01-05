@@ -30,5 +30,5 @@ Authorization : Bearer Token
 
 - You can refer my [article](https://praveenorugantitech.blogspot.com/2019/05/spring-security-jwt-authentication.html) for more details. 
 
-### [Buy me a Book](https://bit.ly/388sUbE)
+### [Buy me a Book](https://www.buymeacoffee.com/praveenoruganti)
 
