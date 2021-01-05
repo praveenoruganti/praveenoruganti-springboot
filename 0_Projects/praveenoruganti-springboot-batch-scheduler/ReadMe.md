@@ -18,7 +18,7 @@ Cron expression is represented by six fields:
 
 second, minute, hour, day of month, month, day(s) of week
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-springboot-batch-scheduler/src/main/resources/images/1.PNG)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-springboot-batch-scheduler/src/main/resources/images/1.PNG)
 
 From the above cron expression, we give you some example patterns:
 
@@ -123,17 +123,17 @@ app:
 Lets see the Logs now.
 
 ``` LOG
-{"@timestamp":"2020-11-08T00:23:00.016+05:30","severity":"INFO","service":"praveenoruganti-springboot-batch-scheduler","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.praveen.batch.scheduler.BatchScheduler","methodName":"quoteGeneratorScheduler","lineNo":"24","message":"quoteGeneratorScheduler Starts","stacktrace":""}
+{"@timestamp":"2020-11-08T00:23:00.016+05:30","severity":"INFO","service":"praveenorugantitech-springboot-batch-scheduler","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.praveen.batch.scheduler.BatchScheduler","methodName":"quoteGeneratorScheduler","lineNo":"24","message":"quoteGeneratorScheduler Starts","stacktrace":""}
 You will face many defeats in life, but never let yourself be defeated.
-{"@timestamp":"2020-11-08T00:23:00.016+05:30","severity":"INFO","service":"praveenoruganti-springboot-batch-scheduler","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.praveen.batch.scheduler.BatchScheduler","methodName":"quoteGeneratorScheduler","lineNo":"35","message":"quoteGeneratorScheduler Ends","stacktrace":""}
-{"@timestamp":"2020-11-08T00:24:00.010+05:30","severity":"INFO","service":"praveenoruganti-springboot-batch-scheduler","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.praveen.batch.scheduler.BatchScheduler","methodName":"quoteGeneratorScheduler","lineNo":"24","message":"quoteGeneratorScheduler Starts","stacktrace":""}
+{"@timestamp":"2020-11-08T00:23:00.016+05:30","severity":"INFO","service":"praveenorugantitech-springboot-batch-scheduler","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.praveen.batch.scheduler.BatchScheduler","methodName":"quoteGeneratorScheduler","lineNo":"35","message":"quoteGeneratorScheduler Ends","stacktrace":""}
+{"@timestamp":"2020-11-08T00:24:00.010+05:30","severity":"INFO","service":"praveenorugantitech-springboot-batch-scheduler","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.praveen.batch.scheduler.BatchScheduler","methodName":"quoteGeneratorScheduler","lineNo":"24","message":"quoteGeneratorScheduler Starts","stacktrace":""}
 The greatest glory in living lies not in never falling, but in rising every time we fall.
-{"@timestamp":"2020-11-08T00:24:00.010+05:30","severity":"INFO","service":"praveenoruganti-springboot-batch-scheduler","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.praveen.batch.scheduler.BatchScheduler","methodName":"quoteGeneratorScheduler","lineNo":"35","message":"quoteGeneratorScheduler Ends","stacktrace":""}
+{"@timestamp":"2020-11-08T00:24:00.010+05:30","severity":"INFO","service":"praveenorugantitech-springboot-batch-scheduler","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.praveen.batch.scheduler.BatchScheduler","methodName":"quoteGeneratorScheduler","lineNo":"35","message":"quoteGeneratorScheduler Ends","stacktrace":""}
 
 ```
 
 ### Drawbacks of SpringBoot Batch Scheduler
-We need to create seperate app for batch scheduler as it needs to run in single instance which is a drawback in terms of maintenance which can be eliminated by using [ShedLock](https://github.com/praveenoruganti/praveenoruganti-springboot/tree/master/0_Projects/praveenoruganti-springboot-shedlock).
+We need to create seperate app for batch scheduler as it needs to run in single instance which is a drawback in terms of maintenance which can be eliminated by using [ShedLock](https://github.com/praveenoruganti/praveenorugantitech-springboot/tree/master/0_Projects/praveenorugantitech-springboot-shedlock).
 
 ### [Buy me a Book](https://bit.ly/388sUbE)
 

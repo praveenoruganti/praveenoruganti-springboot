@@ -1,6 +1,6 @@
 ## Praveen Oruganti SpringBoot Shedlock
 
-We have seen the [Spring Boot Batch scheduler job creation](https://github.com/praveenoruganti/praveenoruganti-springboot/tree/master/0_Projects/praveenoruganti-springboot-batch-scheduler) earlier. Most of us probably faced with a use case to make only one specific cron job to run at a time in a distributed environment. For example; we don’t want to run multiple cron jobs to send same email to customers or charging them multiple times. To avoid this we have to find a way to make a cron job run only in one instance. For this 
+We have seen the [Spring Boot Batch scheduler job creation](https://github.com/praveenoruganti/praveenorugantitech-springboot/tree/master/0_Projects/praveenorugantitech-springboot-batch-scheduler) earlier. Most of us probably faced with a use case to make only one specific cron job to run at a time in a distributed environment. For example; we don’t want to run multiple cron jobs to send same email to customers or charging them multiple times. To avoid this we have to find a way to make a cron job run only in one instance. For this 
 
 Lets see how to use Shedlock which provides a distributed lock mechanism for cron jobs. Well for this we also need to have a database so I will use MySQL in this example to run locally.
 
@@ -143,7 +143,7 @@ server:
   port: 8080
 spring:
   application:
-    name: praveenoruganti-springboot-shedlock
+    name: praveenorugantitech-springboot-shedlock
   jpa:
   database: MYSQL
   show-sql: true
@@ -209,21 +209,21 @@ app:
 
 ```LOGS
 
-"@timestamp":"2020-11-08T01:03:00.455+05:30","severity":"INFO","service":"praveenoruganti-springboot-shedlock","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.p.shedlock.handler.ShedlockJobHandler","methodName":"quoteGeneratorJob","lineNo":"29","message":"quoteGeneratorJob Starts","stacktrace":""}
+"@timestamp":"2020-11-08T01:03:00.455+05:30","severity":"INFO","service":"praveenorugantitech-springboot-shedlock","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.p.shedlock.handler.ShedlockJobHandler","methodName":"quoteGeneratorJob","lineNo":"29","message":"quoteGeneratorJob Starts","stacktrace":""}
 You will face many defeats in life, but never let yourself be defeated.
-{"@timestamp":"2020-11-08T01:03:00.459+05:30","severity":"INFO","service":"praveenoruganti-springboot-shedlock","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.p.shedlock.handler.ShedlockJobHandler","methodName":"quoteGeneratorJob","lineNo":"35","message":"quoteGeneratorJob Ends","stacktrace":""}
-{"@timestamp":"2020-11-08T01:04:00.126+05:30","severity":"INFO","service":"praveenoruganti-springboot-shedlock","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.p.shedlock.handler.ShedlockJobHandler","methodName":"quoteGeneratorJob","lineNo":"29","message":"quoteGeneratorJob Starts","stacktrace":""}
+{"@timestamp":"2020-11-08T01:03:00.459+05:30","severity":"INFO","service":"praveenorugantitech-springboot-shedlock","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.p.shedlock.handler.ShedlockJobHandler","methodName":"quoteGeneratorJob","lineNo":"35","message":"quoteGeneratorJob Ends","stacktrace":""}
+{"@timestamp":"2020-11-08T01:04:00.126+05:30","severity":"INFO","service":"praveenorugantitech-springboot-shedlock","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.p.shedlock.handler.ShedlockJobHandler","methodName":"quoteGeneratorJob","lineNo":"29","message":"quoteGeneratorJob Starts","stacktrace":""}
 In the end, it's not the years in your life that count
-{"@timestamp":"2020-11-08T01:04:00.127+05:30","severity":"INFO","service":"praveenoruganti-springboot-shedlock","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.p.shedlock.handler.ShedlockJobHandler","methodName":"quoteGeneratorJob","lineNo":"35","message":"quoteGeneratorJob Ends","stacktrace":""}
-{"@timestamp":"2020-11-08T01:05:00.155+05:30","severity":"INFO","service":"praveenoruganti-springboot-shedlock","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.p.shedlock.handler.ShedlockJobHandler","methodName":"quoteGeneratorJob","lineNo":"29","message":"quoteGeneratorJob Starts","stacktrace":""}
+{"@timestamp":"2020-11-08T01:04:00.127+05:30","severity":"INFO","service":"praveenorugantitech-springboot-shedlock","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.p.shedlock.handler.ShedlockJobHandler","methodName":"quoteGeneratorJob","lineNo":"35","message":"quoteGeneratorJob Ends","stacktrace":""}
+{"@timestamp":"2020-11-08T01:05:00.155+05:30","severity":"INFO","service":"praveenorugantitech-springboot-shedlock","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.p.shedlock.handler.ShedlockJobHandler","methodName":"quoteGeneratorJob","lineNo":"29","message":"quoteGeneratorJob Starts","stacktrace":""}
 The greatest glory in living lies not in never falling, but in rising every time we fall.
-{"@timestamp":"2020-11-08T01:05:00.157+05:30","severity":"INFO","service":"praveenoruganti-springboot-shedlock","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.p.shedlock.handler.ShedlockJobHandler","methodName":"quoteGeneratorJob","lineNo":"35","message":"quoteGeneratorJob Ends","stacktrace":""}
+{"@timestamp":"2020-11-08T01:05:00.157+05:30","severity":"INFO","service":"praveenorugantitech-springboot-shedlock","trace":"","span":"","parent":"","exportable":"","thread":"scheduling-1","class":"c.p.shedlock.handler.ShedlockJobHandler","methodName":"quoteGeneratorJob","lineNo":"35","message":"quoteGeneratorJob Ends","stacktrace":""}
 
 ```
 
 If you see the table only one instance will hold the lock.
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-springboot-shedlock/src/main/resources/images/1.PNG)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-springboot-shedlock/src/main/resources/images/1.PNG)
 
 ### [Buy me a Book](https://bit.ly/388sUbE)
 

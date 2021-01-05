@@ -60,7 +60,7 @@ server:
   port: 8761
 spring:
   application:
-    name: praveenoruganti-spring-cloud-eureka-server
+    name: praveenorugantitech-spring-cloud-eureka-server
 
 management:
   endpoints:
@@ -75,9 +75,9 @@ management:
 
 ### Lets Open URL for eureka server application
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-eureka-server/praveenoruganti-spring-cloud-eureka-server/src/main/resources/images/1.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-spring-cloud-eureka-server/praveenorugantitech-spring-cloud-eureka-server/src/main/resources/images/1.png)
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-eureka-server/praveenoruganti-spring-cloud-eureka-server/src/main/resources/images/2.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-spring-cloud-eureka-server/praveenorugantitech-spring-cloud-eureka-server/src/main/resources/images/2.png)
 
 If you see above there are no application registered in eureka server.
 
@@ -143,7 +143,7 @@ server:
   port: 8091
 spring:
   application:
-    name: praveenoruganti-flipkart-billing-service    
+    name: praveenorugantitech-flipkart-billing-service    
 
 ```
 
@@ -208,15 +208,15 @@ server:
   port: 8090
 spring:
   application:
-    name: praveenoruganti-flipkart-ordermanagement-service
+    name: praveenorugantitech-flipkart-ordermanagement-service
     
 praveen-flipkart-ordermanagement-service:
-                   billingURL: http://praveenoruganti-flipkart-billing-service/rest/billingservice/billingorder
+                   billingURL: http://praveenorugantitech-flipkart-billing-service/rest/billingservice/billingorder
 
 
 ```
 
-As we have discussed earlier, praveenoruganti-flipkart-ordermanagement-service is interacting with praveenoruganti-flipkart-billing-service with the help of rest template and let�s see the code of it.
+As we have discussed earlier, praveenorugantitech-flipkart-ordermanagement-service is interacting with praveenorugantitech-flipkart-billing-service with the help of rest template and let�s see the code of it.
 
 ```JAVA
 
@@ -236,21 +236,21 @@ public String createOrder(String orderid) throws Exception {
 
 ```
 
-Here if you see billingURL is mentioned in application.yml as http://praveenoruganti-flipkart-billing-service/rest/billingservice/billingorder 
-As we have used Eureka Server, there is no need for providing the hostname and port for discovery as praveenoruganti-flipkart-ordermanagement-service and praveenoruganti-flipkart-billing-service are already registered in Eureka server rather we have used the applicationname in the URL for service interaction via rest template.
+Here if you see billingURL is mentioned in application.yml as http://praveenorugantitech-flipkart-billing-service/rest/billingservice/billingorder 
+As we have used Eureka Server, there is no need for providing the hostname and port for discovery as praveenorugantitech-flipkart-ordermanagement-service and praveenorugantitech-flipkart-billing-service are already registered in Eureka server rather we have used the applicationname in the URL for service interaction via rest template.
 
 
 ### Lets open URL for eureka server application
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-eureka-server/praveenoruganti-spring-cloud-eureka-server/src/main/resources/images/3.png)
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-eureka-server/praveenoruganti-spring-cloud-eureka-server/src/main/resources/images/6.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-spring-cloud-eureka-server/praveenorugantitech-spring-cloud-eureka-server/src/main/resources/images/3.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-spring-cloud-eureka-server/praveenorugantitech-spring-cloud-eureka-server/src/main/resources/images/6.png)
 ### PCF configuration for service registry and discovery
 
 While using PCF there is no need to develop separate Netflix eureka server springboot application rather we will use the PCF inbuilt Service Registry service.
 
 Login into PCF and go to market place and select Service Registry service.
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-eureka-server/praveenoruganti-spring-cloud-eureka-server/src/main/resources/images/5.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-spring-cloud-eureka-server/praveenorugantitech-spring-cloud-eureka-server/src/main/resources/images/5.png)
 
 There is no need to use spring-cloud-starter-netflix-eureka-client dependency rather we will be including spring-cloud-services-starter-service-registry dependency in pom.xml
 

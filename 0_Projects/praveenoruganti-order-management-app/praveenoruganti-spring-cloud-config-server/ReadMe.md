@@ -44,13 +44,13 @@ Include the below GIT path where the application properties are placed in applic
 
 spring:
  application: 
-  name: praveenoruganti-spring-cloud-config-server
+  name: praveenorugantitech-spring-cloud-config-server
 
  cloud:
    config:
      server:
        git:
-        uri: https://github.com/praveenoruganti/praveenoruganti-springboot/tree/master/0_Projects/praveen-spring-config-server-master
+        uri: https://github.com/praveenoruganti/praveenorugantitech-springboot/tree/master/0_Projects/praveen-spring-config-server-master
         searchPaths: config
 server:
  port: 8888
@@ -65,23 +65,23 @@ While using PCF there is no need to develop separate spring cloude config server
 
 ### Login into PCF and go to market place and select Config server service
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-config-server/src/main/resources/images/1.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-spring-cloud-config-server/src/main/resources/images/1.png)
 
 Then click on Settings present in the left tab
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-config-server/src/main/resources/images/2.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-spring-cloud-config-server/src/main/resources/images/2.png)
 
 Then click on Add Parameter and select Enter as JSON ON and then provide the git configuration properties and click on Update Configuration Parameters button.
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-config-server/src/main/resources/images/3.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-spring-cloud-config-server/src/main/resources/images/3.png)
 
 Then check whether the git information is properly updated by clicking Manage button.
 
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-config-server/src/main/resources/images/4.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-spring-cloud-config-server/src/main/resources/images/4.png)
 
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenoruganti/praveenoruganti-springboot/master/0_Projects/praveenoruganti-spring-cloud-config-server/src/main/resources/images/5.png)
+![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-spring-cloud-config-server/src/main/resources/images/5.png)
 
 ### [Buy me a Book](https://bit.ly/388sUbE)
 
