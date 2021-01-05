@@ -27,9 +27,9 @@
 ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-springboot-firebase/src/main/resources/images/8.PNG)
 
 
-Now select Java and copy the code and paste it in [FBInitialize.java](https://github.com/praveenoruganti/praveenorugantitech-springboot/blob/master/0_Projects/praveenorugantitech-springboot-firebase/src/main/java/com/praveen/patient/repository/FBInitialize.java)
+Now select Java and copy the code and paste it in [FBInitialize.java](https://github.com/praveenorugantitech/praveenorugantitech-springboot/blob/master/0_Projects/praveenorugantitech-springboot-firebase/src/main/java/com/praveen/patient/repository/FBInitialize.java)
 
-- Get serviceAccount.json by clicking on Generate new private key button and place it in [resources](https://github.com/praveenoruganti/praveenorugantitech-springboot-firebase/tree/master/src/main/resources) folder.
+- Get serviceAccount.json by clicking on Generate new private key button and place it in [resources](https://github.com/praveenorugantitech/praveenorugantitech-springboot-firebase/tree/master/src/main/resources) folder.
 
 ![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-springboot/master/0_Projects/praveenorugantitech-springboot-firebase/src/main/resources/images/9.PNG)
 
@@ -52,11 +52,11 @@ Now click on Create database
 
 - Now lets see SpringBoot App coding
 
-[Patient Controller](https://github.com/praveenoruganti/praveenorugantitech-springboot/blob/master/0_Projects/praveenorugantitech-springboot-firebase/src/main/java/com/praveen/patient/controller/PatientController.java) in SpringBoot App.
+[Patient Controller](https://github.com/praveenorugantitech/praveenorugantitech-springboot/blob/master/0_Projects/praveenorugantitech-springboot-firebase/src/main/java/com/praveen/patient/controller/PatientController.java) in SpringBoot App.
  
-[Patient Service](https://github.com/praveenoruganti/praveenorugantitech-springboot/blob/master/0_Projects/praveenorugantitech-springboot-firebase/src/main/java/com/praveen/patient/service/PatientServiceImpl.java) in SpringBoot App.
+[Patient Service](https://github.com/praveenorugantitech/praveenorugantitech-springboot/blob/master/0_Projects/praveenorugantitech-springboot-firebase/src/main/java/com/praveen/patient/service/PatientServiceImpl.java) in SpringBoot App.
 
-Create [new user](https://github.com/praveenoruganti/praveenorugantitech-springboot/blob/master/0_Projects/praveenorugantitech-springboot-firebase/src/main/java/com/praveen/patient/service/AuthServiceImpl.java) in Firebase.
+Create [new user](https://github.com/praveenorugantitech/praveenorugantitech-springboot/blob/master/0_Projects/praveenorugantitech-springboot-firebase/src/main/java/com/praveen/patient/service/AuthServiceImpl.java) in Firebase.
 
 - Lets see swagger 
 

@@ -50,7 +50,7 @@ spring:
    config:
      server:
        git:
-        uri: https://github.com/praveenoruganti/praveenorugantitech-springboot/tree/master/0_Projects/praveen-spring-config-server-master
+        uri: https://github.com/praveenorugantitech/praveenorugantitech-springboot/tree/master/0_Projects/praveen-spring-config-server-master
         searchPaths: config
 server:
  port: 8888

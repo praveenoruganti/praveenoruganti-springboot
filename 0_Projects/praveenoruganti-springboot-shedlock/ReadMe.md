@@ -1,6 +1,6 @@
 ## Praveen Oruganti SpringBoot Shedlock
 
-We have seen the [Spring Boot Batch scheduler job creation](https://github.com/praveenoruganti/praveenorugantitech-springboot/tree/master/0_Projects/praveenorugantitech-springboot-batch-scheduler) earlier. Most of us probably faced with a use case to make only one specific cron job to run at a time in a distributed environment. For example; we don’t want to run multiple cron jobs to send same email to customers or charging them multiple times. To avoid this we have to find a way to make a cron job run only in one instance. For this 
+We have seen the [Spring Boot Batch scheduler job creation](https://github.com/praveenorugantitech/praveenorugantitech-springboot/tree/master/0_Projects/praveenorugantitech-springboot-batch-scheduler) earlier. Most of us probably faced with a use case to make only one specific cron job to run at a time in a distributed environment. For example; we don’t want to run multiple cron jobs to send same email to customers or charging them multiple times. To avoid this we have to find a way to make a cron job run only in one instance. For this 
 
 Lets see how to use Shedlock which provides a distributed lock mechanism for cron jobs. Well for this we also need to have a database so I will use MySQL in this example to run locally.
 
