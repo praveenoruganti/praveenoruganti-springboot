@@ -32,7 +32,7 @@ public class PraveenRabbitmqIntegrationServiceApplication {
 		return new ApiInfoBuilder().title("PRAVEEN ORUGANTI RABBIT MQ SPRING BOOT SWAGGER")
 				.description("WELCOME TO SWAGGER CLIENT")
 				.contact(
-						new Contact("PRAVEEN ORUGANTI", "https://praveenorugantitech.blogspot.com/", "praveenorugantitech@gmail.com"))
+						new Contact("PRAVEEN ORUGANTI", "https://linktr.ee/praveenoruganti", "praveenorugantitech@gmail.com"))
 				.license("Apache 2.0").licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html").version("1.0.0")
 				.build();
 	}

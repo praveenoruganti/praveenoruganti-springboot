@@ -45,7 +45,7 @@ public class SpringbootBackendApplication {
 	public Docket backendServiceApi(Environment environment, TypeResolver typeResolver) {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.apiInfo(new ApiInfo("Employee Registration App", "", "", Strings.EMPTY,
-						new Contact("Praveen Oruganti Tech Team", "https://praveenorugantitech.blogspot.com/",
+						new Contact("Praveen Oruganti Tech Team", "https://linktr.ee/praveenoruganti",
 								"praveenorugantitech@gmail.com"),
 						Strings.EMPTY, Strings.EMPTY, new ArrayList<>()))
 				.select().apis(RequestHandlerSelectors.any()).paths(paths()).build().pathMapping("/")

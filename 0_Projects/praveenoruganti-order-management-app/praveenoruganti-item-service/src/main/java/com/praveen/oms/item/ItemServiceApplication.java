@@ -38,14 +38,14 @@ public class ItemServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ItemServiceApplication.class);
 	}
-	
+
 	@Bean
 	public Docket itemServiceApi(Environment environment, TypeResolver typeResolver) {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.apiInfo(new ApiInfo(environment.getRequiredProperty("apidocs.info.title"),
 						environment.getRequiredProperty("apidocs.info.description"),
 						environment.getRequiredProperty("apidocs.info.version"), Strings.EMPTY,
-						new Contact("Praveen Oruganti Tech Team", "https://praveenorugantitech.blogspot.com/",
+						new Contact("Praveen Oruganti Tech Team", "https://linktr.ee/praveenoruganti",
 								"praveenorugantitech@gmail.com"),
 						Strings.EMPTY, Strings.EMPTY, new ArrayList<>()))
 				.select().apis(RequestHandlerSelectors.any()).paths(paths()).build().pathMapping("/")

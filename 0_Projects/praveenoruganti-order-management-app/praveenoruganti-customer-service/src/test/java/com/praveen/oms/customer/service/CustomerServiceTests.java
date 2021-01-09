@@ -34,7 +34,7 @@ public class CustomerServiceTests {
 	public void getCustomersTest() {
 		List<Customer> listOfExpectedCustomers = new ArrayList<Customer>();
 		Customer custOne = Customer.builder().firstname("Praveen").lastname("Oruganti")
-				.email("praveenoruganti@gmail.com").creationdate("20/11/2019").build();
+				.email("praveenorugantitech@gmail.com").creationdate("20/11/2019").build();
 		Customer custTwo = Customer.builder().firstname("Kiran").lastname("Oruganti").email("kiranbadugu@yahoo.com")
 				.creationdate("21/11/2019").build();
 		Customer custThree = Customer.builder().firstname("Praneeth").lastname("Vishnubhotla")

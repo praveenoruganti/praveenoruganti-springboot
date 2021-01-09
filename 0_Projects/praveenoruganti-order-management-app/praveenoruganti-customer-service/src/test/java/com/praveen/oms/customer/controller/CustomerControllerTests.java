@@ -36,7 +36,7 @@ public class CustomerControllerTests {
 
 	@InjectMocks
 	private CustomerController customerController;
-	
+
 	@Before
 	public void init() {
 		MockitoAnnotations.initMocks(this);
@@ -47,7 +47,7 @@ public class CustomerControllerTests {
 	public void test_GetCustomers() throws Exception {
 		List<Customer> listOfExpectedCustomers = new ArrayList<Customer>();
 		Customer custOne = Customer.builder().firstname("Praveen").lastname("Oruganti")
-				.email("praveenoruganti@gmail.com").creationdate("20/11/2019").build();
+				.email("praveenorugantitech@gmail.com").creationdate("20/11/2019").build();
 		Customer custTwo = Customer.builder().firstname("Kiran").lastname("Oruganti").email("kiranbadugu@yahoo.com")
 				.creationdate("21/11/2019").build();
 		Customer custThree = Customer.builder().firstname("Praneeth").lastname("Vishnubhotla")
@@ -65,9 +65,9 @@ public class CustomerControllerTests {
 	@Test
 	public void test_createCustomer_success() throws Exception {
 		CustomerRequest customerRequest = CustomerRequest.builder().firstname("Praveen").lastname("Oruganti")
-				.email("praveenoruganti@gmail.com").creationdate("20/11/2019").build();
+				.email("praveenorugantitech@gmail.com").creationdate("20/11/2019").build();
 		Customer customer = Customer.builder().firstname("Praveen").lastname("Oruganti")
-				.email("praveenoruganti@gmail.com").creationdate("20/11/2019").build();
+				.email("praveenorugantitech@gmail.com").creationdate("20/11/2019").build();
 
 		when(customerService.createCustomer(customerRequest)).thenReturn(customer);
 

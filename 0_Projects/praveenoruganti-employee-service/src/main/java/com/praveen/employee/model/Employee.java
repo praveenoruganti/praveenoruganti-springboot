@@ -21,17 +21,17 @@ import lombok.experimental.SuperBuilder;
 @Data
 public class Employee implements Serializable{
 	private static final long serialVersionUID = -9101411674332179398L;
-	
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY,generator="empseq")
-	@SequenceGenerator(name="empseq",sequenceName="EMP_SEQ") 
+	@SequenceGenerator(name="empseq",sequenceName="EMP_SEQ")
 	@ApiModelProperty(notes = "The database generated Employee ID")
 	private Long empId;
 	@Column(length = 50, nullable = false)
 	@ApiModelProperty(notes = "Name of the Employee should be in format flname",required=true,example="PraveenOruganti",position = 1)
 	private String empName;
 	@Column(length = 50, nullable = false)
-	@ApiModelProperty(notes = "Email address must include @ and proper domain", example = "praveenoruganti@gmail.com", required = true)
+	@ApiModelProperty(notes = "Email address must include @ and proper domain", example = "praveenorugantitech@gmail.com", required = true)
 	private String emailId;
 	@Column(nullable = false)
 	private String mobile;

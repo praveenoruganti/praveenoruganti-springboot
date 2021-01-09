@@ -47,20 +47,20 @@ public class ShedlockApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ShedlockApplication.class);
 	}
-	
+
 
     @Bean
     public LockProvider lockProvider(DataSource dataSource) {
         return new JdbcTemplateLockProvider(dataSource);
     }
-	
+
 	@Bean
 	public Docket shedlockApplicationDocket(Environment environment, TypeResolver typeResolver) {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.apiInfo(new ApiInfo(environment.getRequiredProperty("apidocs.info.title"),
 						environment.getRequiredProperty("apidocs.info.description"),
 						environment.getRequiredProperty("apidocs.info.version"), Strings.EMPTY,
-						new Contact("Praveen Oruganti Tech Team", "https://praveenorugantitech.blogspot.com/",
+						new Contact("Praveen Oruganti Tech Team", "https://linktr.ee/praveenoruganti",
 								"praveenorugantitech@gmail.com"),
 						Strings.EMPTY, Strings.EMPTY, new ArrayList<>()))
 				.select().apis(RequestHandlerSelectors.any()).paths(paths()).build().pathMapping("/")

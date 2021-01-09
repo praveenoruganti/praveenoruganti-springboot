@@ -24,7 +24,7 @@ import com.praveen.restservices.model.User1;
 @ActiveProfiles("dev")
 @SpringBootTest
 public class HelloControllerTest {
-	
+
 	MockMvc mockMvc;
 
 	@Autowired
@@ -33,7 +33,7 @@ public class HelloControllerTest {
 	@Before
 	public void setup() throws Exception {
 		this.mockMvc = standaloneSetup(this.helloController).build();
-	}	
+	}
 
 	@Test
 	public void testGreetingUser() throws Exception {
@@ -41,19 +41,19 @@ public class HelloControllerTest {
 	            .andExpect(status().isOk())
 	            .andExpect(jsonPath("$", is("praveen-user-management-service Welcome User To Praveen Oruganti Forum !!")));
 	}
-	
+
 	@Test
 	public void testGreetingMsgBean() throws Exception {
 	this.mockMvc.perform(get("/rest/hello/getMsgBean/path-variable/Prasad"))
 	            .andExpect(status().isOk())
 	            .andExpect(jsonPath("$", is("<User1><userId>149903</userId><userName>Prasad</userName>"
-	            		+ "<userEmail>praveenoruganti@gmail.com</userEmail><address>Hyderabad</address></User1>")));
+	            		+ "<userEmail>praveenorugantitech@gmail.com</userEmail><address>Hyderabad</address></User1>")));
 	}
 
 	@Test
 	public void testGreetingBean() {
 		User1 user1 = helloController.greetingBean();
-		assertEquals(user1.getUserEmail(), "praveenoruganti@gmail.com");
+		assertEquals(user1.getUserEmail(), "praveenorugantitech@gmail.com");
 		assertEquals(user1.getAddress(), "Hyderabad");
 		assertEquals(user1.getUserId(), Integer.valueOf(149903));
 		assertEquals(user1.getUserName(), "PraveenOruganti");
@@ -64,5 +64,5 @@ public class HelloControllerTest {
 		String result = helloController.greeting();
 		assertEquals(result, "praveen-user-management-service Welcome To Praveen Oruganti Forum !!");
 	}
-	
+
 }

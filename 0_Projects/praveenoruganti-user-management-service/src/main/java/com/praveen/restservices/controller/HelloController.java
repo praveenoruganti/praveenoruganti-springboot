@@ -24,11 +24,11 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @RequestMapping("/rest/hello")
 public class HelloController {
-	
+
 	@Autowired
 	private RestDataValueProperties prop;
-	
-	
+
+
 	@GetMapping("/getMsg")
 	public String greeting() {
 		log.info("HelloController.greeting() Start");
@@ -36,30 +36,30 @@ public class HelloController {
 		log.info("HelloController.greeting() End");
 		return msg;
 	}
-	
+
 	@GetMapping("/getMsg/user")
 	public String greetingUser() {
 		return prop.getName() + " Welcome User To Praveen Oruganti Forum !!";
 	}
-	
+
 	@GetMapping("/getMsg/admin")
 	public String greetingAdmin() {
 		return prop.getName() + " Welcome Admin To Praveen Oruganti Forum !!";
-	}		
-	
-	
+	}
+
+
 	@GetMapping("/getMsgBean")
-	public User1 greetingBean() {		
-		return new User1(149903,"PraveenOruganti","praveenoruganti@gmail.com","Hyderabad");
+	public User1 greetingBean() {
+		return new User1(149903,"PraveenOruganti","praveenorugantitech@gmail.com","Hyderabad");
 	}
-	
+
 	@GetMapping("/getMsgBean/path-variable/{name}")
-	public User1 greetingBean(@PathVariable String name) {		
-		return new User1(149903,name,"praveenoruganti@gmail.com","Hyderabad");
+	public User1 greetingBean(@PathVariable String name) {
+		return new User1(149903,name,"praveenorugantitech@gmail.com","Hyderabad");
 	}
-	
+
 	@PostMapping("/getMsgBean")
-	public ResponseEntity<User1> greetingBean(@RequestBody User1 user1,UriComponentsBuilder builder) {		
+	public ResponseEntity<User1> greetingBean(@RequestBody User1 user1,UriComponentsBuilder builder) {
 		HttpHeaders headers = new HttpHeaders();
 		headers.setLocation(builder.path("/getMsgBean/{userName}").buildAndExpand(user1.getUserName()).toUri());
 		return new ResponseEntity<User1>(headers, HttpStatus.CREATED);

@@ -33,7 +33,7 @@ public class FlipkartBillingServiceApplication {
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder().title("FlipkartBillingService")
 				.description("WELCOME TO SWAGGER CLIENT")
-				.contact(new Contact("PRAVEEN ORUGANTI", "https://praveenorugantitech.blogspot.com/", "praveenorugantitech@gmail.com"))
+				.contact(new Contact("PRAVEEN ORUGANTI", "https://linktr.ee/praveenoruganti", "praveenorugantitech@gmail.com"))
 				.license("Apache 2.0").licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html").version("1.0.0")
 				.build();
 	}
