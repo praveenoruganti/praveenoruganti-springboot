@@ -1,4 +1,4 @@
-# All About SpringBoot Projects
+# Praveen Oruganti Tech SpringBoot Projects
 
 
 
