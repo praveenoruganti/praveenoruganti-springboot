@@ -1,4 +1,4 @@
-# Praveen Oruganti Tech SpringBoot and Microservices Course
+# Praveen Oruganti Tech SpringBoot Course
 
 - [Introduction](https://praveenorugantitech.blogspot.com/2019/03/introduction-to-spring-boot.html){:target="_blank"}
 - [SpringBoot Profile](https://praveenorugantitech.blogspot.com/2019/03/spring-boot-profile.html){:target="_blank"}
