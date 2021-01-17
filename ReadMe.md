@@ -1,6 +1,6 @@
 # SpringBoot Course
 
-![screenshot of the app](https://raw.githubusercontent.com/praveenorugantitech/praveenorugantitech-express-js/master/tech.PNG)
+
 
 
 - [Introduction](https://praveenorugantitech.blogspot.com/2019/03/introduction-to-spring-boot.html){:target="_blank"}
